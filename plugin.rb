@@ -1,17 +1,17 @@
 # frozen_string_literal: true
 
-# name: discourse-plugin-name
-# about: TODO
+# name: Krabit Hire
+# about: Official hiring plugin for KRABIT
 # meta_topic_id: TODO
 # version: 0.0.1
-# authors: Discourse
-# url: TODO
+# authors: Techhive Technologies
+# url: https://krabit.co
 # required_version: 2.7.0
 
 enabled_site_setting :plugin_name_enabled
 
 module ::MyPluginModule
-  PLUGIN_NAME = "discourse-plugin-name"
+  PLUGIN_NAME = "KrabitHire"
 end
 
 require_relative "lib/my_plugin_module/engine"
