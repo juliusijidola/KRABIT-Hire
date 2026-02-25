@@ -1,4 +1,4 @@
-plugin:
+TODO_plugin_name:
   krabit_hire_enabled:
     default: false
     client: true
