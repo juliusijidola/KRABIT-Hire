@@ -8,7 +8,7 @@
 # url: https://krabit.co
 # required_version: 2.7.0
 
-enabled_site_setting :plugin_name_enabled
+enabled_site_setting :krabit_hire_enabled
 
 module ::MyPluginModule
   PLUGIN_NAME = "KrabitHire"
