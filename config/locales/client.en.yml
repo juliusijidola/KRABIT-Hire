@@ -3,7 +3,7 @@ en:
     admin:
       site_settings:
         categories:
-          TODO_plugin_name: "Plugin Name"
+          plugin: "Plugin Name"
   js:
-    discourse_plugin_name:
+    krabit_hire:
       placeholder: placeholder
