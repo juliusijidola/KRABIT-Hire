@@ -10,12 +10,25 @@
 
 enabled_site_setting :krabit_hire_enabled
 
-module ::MyPluginModule
+module ::KrabitHire
   PLUGIN_NAME = "KrabitHire"
 end
 
 require_relative "lib/my_plugin_module/engine"
 
 after_initialize do
-  # Code which should run after Rails has finished booting
+  module ::KrabitHire
+    class Engine < ::Rails::Engine
+      engine_name "krabit_hire"
+      isolate_namespace KrabitHire
+    end
+  end
+
+  KrabitHire::Engine.routes.draw do
+    get "/" => "hire#index"
+  end
+
+  Discourse::Application.routes.append do
+    mount ::KrabitHire::Engine, at: "/hire"
+  end
 end
